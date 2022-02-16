@@ -1,0 +1,76 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	 <title>document</title>
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	 <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+ 
+ 
+<div class="wrapper">
+
+	        <div class="card">
+			<img src="purple8.jfif"/>
+            <div class="info">
+			<h1>its okay</h1>
+			<p>to begin your story today.It's never too late.<span id="dots">...</span><span id="more">“In the sky there are always answers and explanations for everything: every pain, every suffering, joy and confusion.”</span></p>
+			<button onclick="myFunction()"  class="btn"id="myBtn">Read more</button>
+			<a class="tweet" href="http://twitter.com/share" class="twitter-share-button" data-text="#HTML5Sticky - #Sticky #Notes for the #Web ! An #HTML5 App" data-count="horizontal" data-via="Pragya">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+			</div>
+			</div>
+			<div class="card">
+			<img src="purple5.jfif" />
+            <div class="info">
+			<h1>what if</h1>
+			<p>all the struggle,has been leading you to a beautiful chapter in your life!“The road is long, we carry on, try to have fun in the meantime.”
+			<a  class="tweet" href="http://twitter.com/share" class="twitter-share-button" data-text="#HTML5Sticky - #Sticky #Notes for the #Web ! An #HTML5 App" data-count="horizontal" data-via="Pragya">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+			</div>
+			</div>
+			<div class="card">
+			<img src="purple4.jfif" />
+            <div class="info">
+			<h1>change
+			</h1>
+			<p>can be beautiful and scary at the same time ,but accept it and move forward.!“We long for things that harm us and run from the things that grow and heal us. We think good is bad and bad is good.”
+		<a  class="tweet" href="http://twitter.com/share" class="twitter-share-button" data-text="#HTML5Sticky - #Sticky #Notes for the #Web ! An #HTML5 App" data-count="horizontal" data-via="Pragya">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+			</div>
+			</div>
+			</div>
+		
+
+		
+
+			<script src=" https://cdn.jsdelivr.net/npm/bubbly-bg@1.0.0/dist/bubbly-bg.js"/></script>
+<script>
+bubbly({
+    colorStart: "#4c004c",
+    colorStop: "#1a001a",
+    bubbleFunc: () => `hsla(${Math.random() * 360}, 100%, 50%, ${Math.random() * 0.25})`
+});
+</script>
+<script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+</script>
+
+
+
+
+</body>
+</html>
